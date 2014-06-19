@@ -125,3 +125,5 @@ let g:task_log_max         = '20'
 let g:task_left_arrow      = ' <<'
 " backward arrow ...
 let g:task_left_arrow      = '>> '
+
+filetype plugin indent on
