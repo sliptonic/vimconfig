@@ -10,6 +10,7 @@ set ruler
 set ai
 set mouse=a
 set mousemodel=popup
+set nu
 
 if has("gui_running")
   " GUI is running or is about to start.
