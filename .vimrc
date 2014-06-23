@@ -128,3 +128,7 @@ let g:task_left_arrow      = ' <<'
 let g:task_left_arrow      = '>> '
 
 filetype plugin indent on
+
+set ts=2 sw=2 et
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
