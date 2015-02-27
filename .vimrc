@@ -41,7 +41,7 @@ let g:mta_filetypes = {
     \ 'jinja' : 1,
     \ 'htmldjango' : 1,
     \}
-
+autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType htmldjango set ft=html " For SnipMatesyntax enable
 set background=dark
 colorscheme mustang
@@ -63,9 +63,9 @@ nmap <leader>bb :Bclose<CR>
 
 "tags
 
-map <f12> :!start ctags -R .<cr>
+map <F9> :!start ctags -R .<cr>
 let g:tagbar_usearrows = 1
-nnoremap <leader>l :TagbarToggle<CR>
+nmap <F8> :TagbarToggle<CR>
 
 " this allows line swapping with Ctrl-shift-up/down
 function! s:swap_lines(n1, n2)
