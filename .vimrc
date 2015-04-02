@@ -31,8 +31,6 @@ nmap <C-V> "+gP
 imap <C-V> <ESC><C-V>i
 vmap <C-C> "+y
 
-:map <n> "NERDTree
-
 let g:mta_use_matchparen_group = 0
 let g:mta_filetypes = {
     \ 'html' : 1,
@@ -328,3 +326,22 @@ function! Org_after_todo_state_change_hook(line,state1, state2)
         "            \ '    [' . org#Timestamp() . ']'
         "call append(line("."), repeat(' ',len(matchstr(getline(line(".")),'^\s*'))) . str)
 endfunction
+
+"kill the arrow keys to break bad habits
+"
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+"imap <up> <nop>
+"imap <down> <nop>
+"imap <left> <nop>
+"imap <right> <nop>
+
+
+"This configures vim to watch for changes to this file and autoreload
+augroup myvimrc
+    au!
+    au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
+augroup END
