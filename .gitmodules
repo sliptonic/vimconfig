@@ -40,3 +40,6 @@
 [submodule "bundle/vim-wildfire"]
 	path = bundle/vim-wildfire
 	url = https://github.com/gcmt/wildfire.vim.git
+[submodule "bundle/pyflakes"]
+	path = bundle/pyflakes
+	url = git://github.com/kevinw/pyflakes-vim.git
