@@ -44,7 +44,7 @@ let g:mta_filetypes = {
 
 autocmd FileType htmldjango set ft=html " For SnipMatesyntax enable
 set background=dark
-colorscheme mustang
+colorscheme solarized
 set hidden
 :nnoremap <Tab> :bnext<CR>
 :nnoremap <S-Tab> :bprevious<CR>
